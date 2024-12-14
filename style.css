@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+}
+.contanier {
+  width: 600px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+}
+.left {
+  width: 300px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px 0 0 20px;
+  background: url(images/image-product-desktop.jpg) no-repeat center/cover;
+}
+.right {
+  width: 300px;
+  padding: 30px;
+  /* background-color: aqua; */
+}
+h1 {
+  font-weight: 500;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,
+    Helvetica, sans-serif;
+  color: hsl(228, 12%, 48%);
+}
+h2 {
+  font-family: 'Fraunces', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+p {
+  color: hsl(228, 12%, 48%);
+  line-height: 23px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.price {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+h3 {
+  color: hsl(158, 36%, 37%);
+  font-size: 30px;
+}
+.price p {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 0;
+}
+.cart {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  gap: 15px;
+  font-weight: 600;
+  background-color: hsl(158, 36%, 37%);
+}
+.cart:hover {
+  cursor: pointer;
+  background-color: hsl(157, 48%, 17%);
+}
+.cart p {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+@media (max-width: 375px) {
+  .contanier {
+    width: 340px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    width: inherit;
+    height: 250px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .right {
+    width: inherit;
+    padding: 30px;
+  }
+}
